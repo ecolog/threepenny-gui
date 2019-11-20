@@ -24,6 +24,7 @@ Haskell.initFFI = function () {
   /////////////////////////////////////////////////////////////////////
   // Listen to server and execute JS functions
   var reply = function (response) {
+    Haskell.log("Reply: %o", response);
     if (response !== undefined) {
       connection.send(response);
     }
@@ -132,4 +133,6 @@ Haskell.initFFI = function () {
     delete stablePtrs[ptr].stablePtr;
     delete stablePtrs[ptr];
   };
+
+  Haskell.stablePtrs = stablePtrs;
 };
