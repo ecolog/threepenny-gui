@@ -64,3 +64,9 @@ Heinrich Apfelmus, Daniel Austin, Jeremy Barisch-Rooney, Steve Bigham, Simon Jak
 Special thanks to *Simon Jakobi* for co-maintaining this project.
 
 Special thanks to *Chris Done* for starting the precursor project Ji.
+
+# Usage
+
+```
+ghcid "--command=stack ghci threepenny-gui:lib threepenny-gui:exe:threepenny-examples-upload --ghci-options -fdiagnostics-color=always" --reload samples/Upload.hs --run=main
+```

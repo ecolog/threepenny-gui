@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 480px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #ddd;
+  height: 300px;
+}
+
+.drop-area .highlight {
+  border-color: purple;
+}
